@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <math.h>
-
+//texto
 
 int main(){
   double anterior, actual;
