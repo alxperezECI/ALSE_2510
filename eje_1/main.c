@@ -8,7 +8,6 @@ int main(){
 
   for(int i=0; i<100; i++){
     actual = sin(M_PI * 5 / 100 * i);
-  
   }
   return 0;
 }
