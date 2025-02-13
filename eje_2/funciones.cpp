@@ -24,11 +24,32 @@ int main() {
    cout << "El número ingresado es: " << number << endl;
 
    double vec[20] = {0.0};
-
-
+   
    cout << "dirección del vector: " << vec << endl;
    cout << "dirección del primer elemento del vector: " << &vec[0] << endl;
    cout << "dirección del segundo elemento del vector: " << &vec[1] << endl;
+
+   double *p = &vec[0];
+   for(int i = 0; i < 13;i++)
+       p++;
+   
+   *p = 89.78654;
+
+   cout << "El valor de vec[13] es: " << vec[13] << endl;
+   cout << "El valor de vec[12] es: " << vec[12] << endl;
+   cout << "El valor de vec[14] es: " << vec[14] << endl;
+
+   float *pf = (float*) &vec[0];
+   for(int i = 0; i < 13;i++)
+       pf++;
+   
+   *pf = 89.78654;
+
+   for(int i = 0; i<20; i++)
+      cout << "El valor de vec[" << i << "] es: " << vec[i] << endl;
+
+
+   return 0;
 }
  
 int square(int n) {  // non-const
