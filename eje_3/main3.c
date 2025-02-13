@@ -5,6 +5,7 @@ using namespace std;
 
 double fx (const double &x){
   return (sin(10*x) + cos(3*x));
+
 }
 
 double fx2 (const double  &x){
