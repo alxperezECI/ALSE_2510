@@ -26,6 +26,7 @@ double punto1( double *x, double *y, double *r, const int &cant ){
   for(int i = 0; i < cant; i++){
     *r = *x * *y;
     aux += *r;
+    r++; x++; y++;
   }
     return aux;
 }
