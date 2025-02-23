@@ -14,6 +14,12 @@ double funeval( const double &x ){
   return sin(M_PI*5*x/100);
 }
 
+ //La nueva función: cos(x * Pi / 25)
+double funeva3(const double &x) {
+    return cos(x * M_PI / 25);
+}
+
+
 void cruces_cero( double (*f)(const double &), const double &xl, const double &xu ){
   // El primer parámetro de esta función es un puntero a una función de la forma
   // double (*p)(const double&)
@@ -29,6 +35,7 @@ void cruces_cero( double (*f)(const double &), const double &xl, const double &x
 int main(){
   cruces_cero(funeval, 0, 100); // En este caso se llama la función Sin(M_PI*x/20)
   cruces_cero(funeval2, 0, 100);// En este otro a sin(x/10)+cos(3*x/100)
+  cruces_cero(funeva3, 20, 80); // En este caso se llama la nueva función para el rango entre 20 y 80
   return 0;
 }
 
