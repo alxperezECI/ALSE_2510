@@ -1,6 +1,11 @@
 #include <stdio.h>
 #include <math.h>
 
+double funeval3( const double &x ){
+  // El puntero que permite llegar a esta función tiene la forma
+  // de double (*p)(const double&)
+   return cos(x*M_PI/25);
+}
 
 double funeval2( const double &x ){
   // El puntero que permite llegar a esta función tiene la forma
@@ -27,24 +32,11 @@ void cruces_cero( double (*f)(const double &), const double &xl, const double &x
 }
 
 int main(){
+  printf("Cruces por cero de y = sin(M_PI*x/20):\n");
   cruces_cero(funeval, 0, 100); // En este caso se llama la función Sin(M_PI*x/20)
-  cruces_cero(funeval2, 0, 100);// En este otro a sin(x/10)+cos(3*x/100)
+  printf("Cruces por cero de y = sin(x/10)+cos(3*x/100):\n");
+  cruces_cero(funeval2, 0, 100); // En este otro a sin(x/10)+cos(3*x/100)
+  printf("Cruces por cero de y = cos(M_PI*x/25):\n");
+  cruces_cero(funeval3, 0, 100); // En este tercer caso a cos(M_PI*x/25)
   return 0;
 }
-
-
-/*
-int main(){
-  double anterior, actual, constante;
-  anterior = actual = 0.;
-  constante = 1.1 * M_PI * 5 / 100;
-
-  for(int i=0; i<100; i++){
-    actual = sin(constante * i);
-    if((anterior >= 0 && actual < 0 ) || (anterior < 0 && actual >= 0))
-      printf("Hay un cruce por cero en: %d\n",i);
-    anterior = actual;
-  }
-  return 0;
-}
-*/

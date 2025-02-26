@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 #include <math.h>
 #include <stdlib.h>
@@ -10,28 +9,26 @@ using namespace std;
 double punto2( const double x[], const double y[], double r[], const int &cant ){
   // En esta función se hace el producto elemento a elemento de los dos vectores y se devuelve
   // la suma de todos los valores del vector de resultados.
-  double acumula = 0.;
-  for(int i =0; i < cant; i++){
-    r[i] = x[i] * y[i];
-//    cout << x[i] << " * " << y[i] << " = " << r[i] << endl;
-    acumula += r[i];
-  }
+  double aux = 0.;
 
-  return acumula;
+  for(int i = 0; i < cant; i++){
+    r[i] = x[i] * y[i];
+    aux += r[i];
+  }
+    return aux;
 }
 
 double punto1( double *x, double *y, double *r, const int &cant ){
   // En esta función se hace el producto elemento a elemento de los dos vectores y se devuelve
   // la suma de todos los valores del vector de resultados.
-  double acumula = 0.;
-  for(int i =0; i < cant; i++){
+  double aux = 0.;
+
+  for(int i = 0; i < cant; i++){
     *r = *x * *y;
-    acumula += *r;
-  //  cout << *x << " * " << *y << " = " << *r << endl;
+    aux += *r;
     r++; x++; y++;
   }
-
-  return acumula;
+    return aux;
 }
 
 
@@ -39,8 +36,9 @@ int main(){
   srand(time(0));
   double v1[100], v2[100], vres[100];
 
+//Este ciclo se usa para inicializar todos los valores del v1 con el valor de 3.0
   for(int i=0; i<100;i++){
-    v1[i] = 3.;
+    v1[i] = 3.0;
     v2[i] = 50 + rand() % 100;
   }
 
