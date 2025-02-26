@@ -1,3 +1,4 @@
+//By: Juan Cortés y Dickson Trujillo
 #include <stdio.h>
 #include <math.h>
 
