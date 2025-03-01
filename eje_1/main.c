@@ -1,18 +1,25 @@
 #include <stdio.h>
 #include <math.h>
 
+int funeval2(const &x){
+	return sin(10*x)+ cos(3*x);
+}
+int funeval()<
 
-int main(){
-  double anterior, actual, constante;
-  anterior = actual = 0.;
-  constante = 1.1 * M_PI * 5 / 100;
+void  cruces_cero( double xl,double xu){
+  double anterior=0., actual;
 
-  for(int i=0; i<100; i++){
-    actual = sin(constante * i);
+  for(int i=xl; i< xu; i++){
+    actual = funeval((double) i);
     if((anterior >= 0 && actual < 0 ) || (anterior < 0 && actual >= 0))
       printf("Hay un cruce por cero en: %d\n",i);
     anterior = actual;
   }
-  return 0;
 }
+
+int main(){
+	cruces_cero(0,100);
+	return 0;
+}
+
 
