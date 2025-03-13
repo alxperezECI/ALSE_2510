@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/main_user/Proyectos/ALSE_2510/eje5/clasificar.cpp" "CMakeFiles/clasificador.dir/clasificar.cpp.o" "gcc" "CMakeFiles/clasificador.dir/clasificar.cpp.o.d"
+  "/home/main_user/Proyectos/ALSE_2510/eje5/polys.cpp" "CMakeFiles/clasificar.dir/polys.cpp.o" "gcc" "CMakeFiles/clasificar.dir/polys.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

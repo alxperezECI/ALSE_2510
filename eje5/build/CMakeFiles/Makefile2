@@ -63,7 +63,7 @@ CMAKE_BINARY_DIR = /home/main_user/Proyectos/ALSE_2510/eje5/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/clasificador.dir/all
+all: CMakeFiles/clasificar.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,34 +71,34 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/clasificador.dir/clean
+clean: CMakeFiles/clasificar.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/clasificador.dir
+# Target rules for target CMakeFiles/clasificar.dir
 
 # All Build rule for target.
-CMakeFiles/clasificador.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/clasificador.dir/build.make CMakeFiles/clasificador.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/clasificador.dir/build.make CMakeFiles/clasificador.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/main_user/Proyectos/ALSE_2510/eje5/build/CMakeFiles --progress-num=1,2 "Built target clasificador"
-.PHONY : CMakeFiles/clasificador.dir/all
+CMakeFiles/clasificar.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/clasificar.dir/build.make CMakeFiles/clasificar.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/clasificar.dir/build.make CMakeFiles/clasificar.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/main_user/Proyectos/ALSE_2510/eje5/build/CMakeFiles --progress-num=1,2 "Built target clasificar"
+.PHONY : CMakeFiles/clasificar.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/clasificador.dir/rule: cmake_check_build_system
+CMakeFiles/clasificar.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/main_user/Proyectos/ALSE_2510/eje5/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/clasificador.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/clasificar.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/main_user/Proyectos/ALSE_2510/eje5/build/CMakeFiles 0
-.PHONY : CMakeFiles/clasificador.dir/rule
+.PHONY : CMakeFiles/clasificar.dir/rule
 
 # Convenience name for target.
-clasificador: CMakeFiles/clasificador.dir/rule
-.PHONY : clasificador
+clasificar: CMakeFiles/clasificar.dir/rule
+.PHONY : clasificar
 
 # clean rule for target.
-CMakeFiles/clasificador.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/clasificador.dir/build.make CMakeFiles/clasificador.dir/clean
-.PHONY : CMakeFiles/clasificador.dir/clean
+CMakeFiles/clasificar.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/clasificar.dir/build.make CMakeFiles/clasificar.dir/clean
+.PHONY : CMakeFiles/clasificar.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

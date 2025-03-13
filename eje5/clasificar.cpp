@@ -4,10 +4,15 @@
 #include <time.h>
 #include <iostream>
 #include <string.h>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 21cceaeb1bd009a487e3df767f71973d78f36f92
 using namespace std;
 
 int main(int argc, char** argv){
   cout << "He recibido " << argc << " argumentos de los cuales: " << endl;
+<<<<<<< HEAD
   for(int i = 0; i < argc; i++){  
     for(int j=0;j<strlen(argv[i]);j++){
       if (isdigit(argv[i][j])){
@@ -19,6 +24,16 @@ int main(int argc, char** argv){
       }
     }
     cout << "ingreso " << argv[i] << endl;
+=======
+  for(int i = 0; i < argc; i++){
+    for( int j=0; j<strlen(argv[i]); j++){
+      if( isdigit(argv[i][j]) ){
+        cout << "El argumento " << i << " es un numero" << endl;
+        break;
+      }
+    }
+    cout << argv[i] << endl;
+>>>>>>> 21cceaeb1bd009a487e3df767f71973d78f36f92
   }
 }
 

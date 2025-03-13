@@ -117,41 +117,41 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named clasificador
+# Target rules for targets named clasificar
 
 # Build rule for target.
-clasificador: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clasificador
-.PHONY : clasificador
+clasificar: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clasificar
+.PHONY : clasificar
 
 # fast build rule for target.
-clasificador/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/clasificador.dir/build.make CMakeFiles/clasificador.dir/build
-.PHONY : clasificador/fast
+clasificar/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/clasificar.dir/build.make CMakeFiles/clasificar.dir/build
+.PHONY : clasificar/fast
 
-clasificar.o: clasificar.cpp.o
-.PHONY : clasificar.o
+polys.o: polys.cpp.o
+.PHONY : polys.o
 
 # target to build an object file
-clasificar.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/clasificador.dir/build.make CMakeFiles/clasificador.dir/clasificar.cpp.o
-.PHONY : clasificar.cpp.o
+polys.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/clasificar.dir/build.make CMakeFiles/clasificar.dir/polys.cpp.o
+.PHONY : polys.cpp.o
 
-clasificar.i: clasificar.cpp.i
-.PHONY : clasificar.i
+polys.i: polys.cpp.i
+.PHONY : polys.i
 
 # target to preprocess a source file
-clasificar.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/clasificador.dir/build.make CMakeFiles/clasificador.dir/clasificar.cpp.i
-.PHONY : clasificar.cpp.i
+polys.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/clasificar.dir/build.make CMakeFiles/clasificar.dir/polys.cpp.i
+.PHONY : polys.cpp.i
 
-clasificar.s: clasificar.cpp.s
-.PHONY : clasificar.s
+polys.s: polys.cpp.s
+.PHONY : polys.s
 
 # target to generate assembly for a file
-clasificar.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/clasificador.dir/build.make CMakeFiles/clasificador.dir/clasificar.cpp.s
-.PHONY : clasificar.cpp.s
+polys.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/clasificar.dir/build.make CMakeFiles/clasificar.dir/polys.cpp.s
+.PHONY : polys.cpp.s
 
 # Help Target
 help:
@@ -161,10 +161,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... clasificador"
-	@echo "... clasificar.o"
-	@echo "... clasificar.i"
-	@echo "... clasificar.s"
+	@echo "... clasificar"
+	@echo "... polys.o"
+	@echo "... polys.i"
+	@echo "... polys.s"
 .PHONY : help
 
 
