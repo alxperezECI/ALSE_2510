@@ -1,9 +1,9 @@
 #include <iostream>
-#include "Circulo.h"
+#include "Circulo-tarea.h"
 #include "Cuadrado.h"
 #include "Triangulo.h"
 #include <vector>
-
+// GRUPO: JULIANA TUTA Y ANGEL PEDREROS
 using namespace std;
 
 int main(){
@@ -31,13 +31,13 @@ int main(){
 
     cout << pG << endl;
 
-    int tipo = 0;
+    int radio1, radio2, x1, x2 ,y1, y2 ,tipo = 0;
     float radio, lado, base, altura;
     radio = lado = base = altura = 0.;
 
     for (int i = 0; i < 5; i++){
         cout << "Figura para crear Circulo(1), Cuadrado(2), Triangulo(3) o "
-                "Pentagono(4)" << endl;
+                "Inter de circulos(4)" << endl;
         cin >> tipo;
         switch (tipo) {
         case 1:
@@ -57,6 +57,20 @@ int main(){
             cin >> altura;
             pG = new Triangulo( base, altura );
             break;
+        case 4:
+            cout << "Radio del circulo 1" << endl;
+            cin >> radio1;
+            cout << "Coordenada X-1" << endl;
+            cin >> x1;
+            cout << "Coordenada Y-1" << endl;
+            cin >> y1;
+            cout << "Radio del circulo 2" << endl;
+            cin >> radio2;
+            cout << "Coordenada X-2" << endl;
+            cin >> x2;
+            cout << "Coordenada Y-2" << endl;
+            cin >> y2;
+            break;
         default:
             cout << "Por favor lea bien" << endl;
             break;
@@ -73,7 +87,12 @@ int main(){
     for (int i = 0; i < vFig.size(); i++){
         delete vFig.at(i);
     }
-
+    Circulo d = Circulo(radio1, x1, y1);
+    Circulo f = Circulo(radio2, x2, y2);
+    if (d.interseccion(f))
+        cout << "Los circulos se intersectan" << endl;
+    else    
+        cout << "Los circulos NO se intersectan" << endl;
 
     return 0;
 }

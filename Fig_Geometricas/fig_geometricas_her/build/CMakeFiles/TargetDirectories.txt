@@ -1,0 +1,3 @@
+/home/afpa/ALSE_2510/Fig_Geometricas/fig_geometricas_her/build/CMakeFiles/fig_geometricas_her.dir
+/home/afpa/ALSE_2510/Fig_Geometricas/fig_geometricas_her/build/CMakeFiles/edit_cache.dir
+/home/afpa/ALSE_2510/Fig_Geometricas/fig_geometricas_her/build/CMakeFiles/rebuild_cache.dir
