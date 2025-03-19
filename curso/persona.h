@@ -1,20 +1,21 @@
+#ifndef _PERSONA
+#define _PERSONA
 
-
-
+#include <string>
+#include <iostream>
+using namespace std;
 
 class Persona{
-  string nombre;
-  string apellido;
-  int doc_identidad;
+  string _nombre;
+  string _apellido;
+  int _doc_identidad;
 
 public:
-  Persona(int docid);
+  Persona( string nombre, string apellido, int docid);
+  string Apellido() const;
+  int Doc_identidad() const;
+  string Nombre() const;
 
-
-  string Nombre();
-  void Nombre( const string &nombre);
-
-
-
-
+  friend ostream &operator<<(ostream &os, const Persona &p);
 };
+#endif
