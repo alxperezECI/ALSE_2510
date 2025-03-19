@@ -20,18 +20,15 @@ class Persona
     int _docid;
 
 public:
-    void Nombre(const string &name) { _name = name; }; // Método de asignación de nombre
-    const string &getNombre() { return _name; };       // Método de obtención de nombre
-
-    void Apellido(const string &ape) { _ape = ape; }; // Método de asignación de apellido
-    const string &getApellido() { return _ape; };     // Método de obtención de apellido
-
-    void DocIdentidad(const int &docid) { _docid = docid; }; // Método de asignación de documento de identidad
-    const int &getDocIdentidad() { return _docid; };         // Método de obtención de documento de identidad
-
     Persona();                                                 // Constructor por omisión
     Persona(const string &name, const string &ape, int docid); // Constructor con parámetros
     ~Persona();                                                // Destructor
+
+    const string &getNombre(); // Método de obtención de nombre
+
+    const string &getApellido(); // Método de obtención de apellido
+
+    const int &getDocumento(); // Método de obtención de documento de identidad
 };
 
 #endif // PERSONA_TAREA_H
