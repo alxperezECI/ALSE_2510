@@ -4,7 +4,7 @@
 
 
 #include "Circulo.h"
-#include <math.h>
+#include <cmath>
 /**
  * Circulo implementation
  */
@@ -31,4 +31,9 @@ float Circulo::area(){
 
 float Circulo::perimetro(){
     return 2 * M_PI * _radio;
+}
+
+bool Circulo::seIntersectaCon(const Circulo& otro) const {
+    float distancia = sqrt(pow(_x - otro._x, 2) + pow(_y - otro._y, 2));
+    return distancia <= (_radio + otro._radio);
 }

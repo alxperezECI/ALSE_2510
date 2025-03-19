@@ -73,7 +73,16 @@ int main(){
     for (int i = 0; i < vFig.size(); i++){
         delete vFig.at(i);
     }
+    
+    //Prueba de seIntersectaCon
+    Circulo c1(5.0, 2.0, 0.0); 
+    Circulo c2(6.0, 6.0, 0.0); 
 
+    if (c1.seIntersectaCon(c2)) {
+        cout << "Los círculos se intersectan." << endl;
+    } else {
+        cout << "Los círculos no se intersectan." << endl;
+    }
 
     return 0;
 }
