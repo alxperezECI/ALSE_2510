@@ -35,7 +35,7 @@ int main(){
     float radio, lado, base, altura;
     radio = lado = base = altura = 0.;
 
-    for (int i = 0; i < 10; i++){
+    for (int i = 0; i < 5; i++){
         cout << "Figura para crear Circulo(1), Cuadrado(2), Triangulo(3) o "
                 "Pentagono(4)" << endl;
         cin >> tipo;
