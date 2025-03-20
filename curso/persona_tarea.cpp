@@ -19,17 +19,21 @@ Persona::Persona(const string &name, const string &ape, int docid)
     _docid = docid;
 }
 
-const string &Persona::getNombre()
+Persona::~Persona(){
+    
+}
+
+const string &Persona::getNombre() const
 {
     return _name;
 }
 
-const string &Persona::getApellido()
+const string &Persona::getApellido() const
 {
     return _ape;
 }
 
-const int &Persona::getDocumento()
+const int &Persona::getDocumento() const
 {
     return _docid;
 }

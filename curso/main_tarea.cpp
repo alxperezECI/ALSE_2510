@@ -1,46 +1,43 @@
-#include "estudiante_tarea.h"
 #include <iostream>
-
+#include "estudiante_tarea.h"
+#include "persona_tarea.h"
+#include <vector>
+#include <fstream>
+#include <string>   
 using namespace std;
 
-int main()
+int main(int argc, char const *argv[])
 {
-    vector<Estudiante> curso;
-    float max_nota = 0;
-
-    Estudiante e1 = Estudiante("Juan", "Perez", 123, 1);
-
-    e1.agregar_nota(4.5);
-    e1.agregar_nota(3.5);
-    e1.agregar_nota(2.5);
-
-    curso.push_back(e1);
-
-    Estudiante e2 = Estudiante("Maria", "Gomez", 456, 2);
-    e2.agregar_nota(1.5);
-    e2.agregar_nota(2.5);
-    e2.agregar_nota(5);
-
-    curso.push_back(e2);
-
-    for (int i = 0; i < curso.size(); i++)
+    if(argc != 2)
     {
-        cout << "El Promedio del estidiante " << i + 1 << " es: " << curso[i].promedio() << endl;
+        cout << "Uso: " << argv[0] << " <archivo de datos>" << endl;
+        return 1;
     }
+    vector<Estudiante> estudiantes;
+    double promedio_curso = 0.0;
 
-    for (int i = 0; i < curso.size(); i++)
+    // Se leeerá de un archivo en donde en cada línea se tiene el nombre, apellido, documento de identidad y código del estudiante
+    // Se leerán las notas de cada estudiante y se calculará el promedio del curso  
+    ifstream archivo(argv[1]);
+    string nombre, apellido;
+    int docid, codigo;
+    double nota[5];
+    while(archivo >> codigo >> nombre >> apellido >> docid  >> nota[0] >> nota[1] >> nota[2] >> nota[3] >> nota[4])
     {
-        max_nota = (max_nota < curso[i].mayor_nota()) ? curso[i].mayor_nota() : max_nota;
+      // Poner aquí el código para crear un objeto de la clase Estudiante y agregarlo al vector estudiantes
+      Estudiante est(nombre, apellido, docid, codigo);
+      estudiantes.push_back(est);
     }
+    archivo.close();
 
-    cout << "La mayor nota del curso es: " << max_nota << endl;
-
-    cout << "Presentación de los estudiantes: " << endl;
-
-    for (int i = 0; i < curso.size(); i++)
+    cout << "No. de estudiantes cargados: " << estudiantes.size() << endl;
+    
+    vector<Estudiante>::iterator it;
+    for(it = estudiantes.begin(); it != estudiantes.end(); it++)
     {
-        cout << curso[i] << endl;
+        promedio_curso += it->promedio();
     }
+    cout << "Promedio del curso: " << promedio_curso / estudiantes.size() << endl;  
 
     return 0;
 }
