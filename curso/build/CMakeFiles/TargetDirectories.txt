@@ -1,0 +1,3 @@
+/home/afpa/ALSE_2510/curso/build/CMakeFiles/curso.dir
+/home/afpa/ALSE_2510/curso/build/CMakeFiles/edit_cache.dir
+/home/afpa/ALSE_2510/curso/build/CMakeFiles/rebuild_cache.dir

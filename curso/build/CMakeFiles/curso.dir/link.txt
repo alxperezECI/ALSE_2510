@@ -1,0 +1,1 @@
+/usr/bin/c++ "CMakeFiles/curso.dir/main-tarea.cpp.o" "CMakeFiles/curso.dir/persona-tarea.cpp.o" "CMakeFiles/curso.dir/estudiante-tarea.cpp.o" -o curso 
