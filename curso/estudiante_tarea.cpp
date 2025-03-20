@@ -4,15 +4,54 @@
  */
 
 #include "estudiante_tarea.h"
-#include <algorithm>
-#include <numeric>
 
-float Estudiante::promedio(const vector<float> notas)
+Estudiante::Estudiante(const string &name, const string &ape, const int &docid, const int &codigo) : Persona(name, ape, docid)
 {
-    return accumulate(notas.begin(), notas.end(), 0.0) / notas.size();
+    _codigo = codigo;
 }
 
-void Estudiante::agregar_nota(vector<float> &notas, const float &nota)
+Estudiante::~Estudiante()
 {
-    notas.push_back(nota);
+}
+
+void Estudiante::agregar_nota(const float &nota)
+{
+    vector_notas.push_back(nota);
+}
+
+const float Estudiante::promedio()
+{
+    float promedio = 0;
+    for (int i = 0; i < vector_notas.size(); i++)
+    {
+        promedio += vector_notas[i];
+    }
+    return promedio / vector_notas.size();
+}
+
+const float &Estudiante::getNota(const int &num_nota)
+{
+    return vector_notas[num_nota];
+}
+
+const int &Estudiante::getCod() const
+{
+    return _codigo;
+}
+
+const float Estudiante::mayor_nota()
+{
+    float mayor = vector_notas[0];
+
+    for (int i = 1; i < vector_notas.size(); i++)
+    {
+        mayor = (mayor < vector_notas[i]) ? vector_notas[i] : mayor;
+    }
+    return mayor;
+}
+
+ostream &operator<<(ostream &os, const Estudiante &estudiante)
+{
+    os << "ID: " << estudiante.getCod() << ", Nombre: " << estudiante.getNombre() << ", Apellido: " << estudiante.getApellido();
+    return os;
 }

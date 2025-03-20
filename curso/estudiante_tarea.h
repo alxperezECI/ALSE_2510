@@ -16,27 +16,24 @@ class Estudiante : public Persona
 
     float _nota;
     int _codigo;
+    vector<float> vector_notas;
+    Estudiante();
 
 public:
-    Estudiante();
     Estudiante(const string &name, const string &ape, const int &docid, const int &codigo);
     ~Estudiante();
 
-    void CodEstudiante(const int &codigo) { _codigo = codigo; }; // Método de asignación de código de estudiante
-    const int &getCodEstudiante() { return _codigo; };           // Método de obtención de código de estudiante
+    void agregar_nota(const float &nota);
 
-    vector<float> vector_notas(const size_t &cant_notas)
-    {
-        // Método para crear un vector de notas inicializado en 0
-        return vector<float>(cant_notas, 0.);
-    }
+    const float promedio();
 
-    void agregar_nota(vector<float> &notas, const float &nota);
+    const float &getNota(const int &num_nota);
 
-    float promedio(const vector<float> notas);
+    const int &getCod() const;
 
-    void setNota(const float &nota) { _nota = nota; };
-    const float &getNota() { return _nota; };
+    const float mayor_nota();
+
+    friend ostream &operator<<(ostream &os, const Estudiante &estudiante);
 };
 
 #endif // ESTUDIANTE_TAREA_H
