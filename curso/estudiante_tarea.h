@@ -25,7 +25,7 @@ public:
 
     void agregar_nota(const float &nota);
 
-    const float promedio();
+    const float promedio() const;
 
     const float &getNota(const int &num_nota);
 

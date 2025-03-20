@@ -7,8 +7,8 @@
 
 Persona::Persona()
 {
-    _name = "N.A";
-    _ape = "N.A";
+    _name = "";
+    _ape = "";
     _docid = 0;
 }
 
