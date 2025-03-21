@@ -14,9 +14,10 @@ using namespace std;
 class Estudiante : public Persona
 {
 
-    float _nota;
     int _codigo;
+    float _promedio;
     vector<float> vector_notas;
+
     Estudiante();
 
 public:
@@ -25,7 +26,7 @@ public:
 
     void agregar_nota(const float &nota);
 
-    const float promedio() const;
+    const float promedio();
 
     const float &getNota(const int &num_nota);
 

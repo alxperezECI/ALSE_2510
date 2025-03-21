@@ -5,13 +5,16 @@
 
 #include "estudiante_tarea.h"
 
-Estudiante::Estudiante():Persona("","",0){
+Estudiante::Estudiante() : Persona("", "", 0)
+{
     _codigo = 0;
+    _promedio = 0;
 }
 
 Estudiante::Estudiante(const string &name, const string &ape, const int &docid, const int &codigo) : Persona(name, ape, docid)
 {
     _codigo = codigo;
+    _promedio = 0;
 }
 
 Estudiante::~Estudiante()
@@ -23,14 +26,18 @@ void Estudiante::agregar_nota(const float &nota)
     vector_notas.push_back(nota);
 }
 
-const float Estudiante::promedio() const
+const float Estudiante::promedio()
 {
-    float promedio = 0;
-    for (int i = 0; i < vector_notas.size(); i++)
+    if (_promedio == 0)
     {
-        promedio += vector_notas[i];
+        for (int i = 0; i < vector_notas.size(); i++)
+        {
+            _promedio += vector_notas[i];
+        }
+
+        _promedio /= vector_notas.size();
     }
-    return promedio / vector_notas.size();
+    return _promedio;
 }
 
 const float &Estudiante::getNota(const int &num_nota)
@@ -57,6 +64,6 @@ const float Estudiante::mayor_nota()
 ostream &operator<<(ostream &os, const Estudiante &estudiante)
 {
     os << "ID: " << estudiante.getCod() << ", Nombre: " << estudiante.getNombre() << ", Apellido: " << estudiante.getApellido()
-    << "Promedio: " << estudiante.promedio();
+       << ", Promedio: " << estudiante._promedio << endl;
     return os;
 }
