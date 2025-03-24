@@ -69,19 +69,19 @@ include CMakeFiles/fig_geometricas_her.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/fig_geometricas_her.dir/flags.make
 
-CMakeFiles/fig_geometricas_her.dir/mainTarea.cpp.o: CMakeFiles/fig_geometricas_her.dir/flags.make
-CMakeFiles/fig_geometricas_her.dir/mainTarea.cpp.o: /home/vanessacardenas/Proyectos/ALSE_2510/Fig_Geometricas/fig_geometricas_her/mainTarea.cpp
-CMakeFiles/fig_geometricas_her.dir/mainTarea.cpp.o: CMakeFiles/fig_geometricas_her.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vanessacardenas/Proyectos/ALSE_2510/Fig_Geometricas/fig_geometricas_her/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/fig_geometricas_her.dir/mainTarea.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fig_geometricas_her.dir/mainTarea.cpp.o -MF CMakeFiles/fig_geometricas_her.dir/mainTarea.cpp.o.d -o CMakeFiles/fig_geometricas_her.dir/mainTarea.cpp.o -c /home/vanessacardenas/Proyectos/ALSE_2510/Fig_Geometricas/fig_geometricas_her/mainTarea.cpp
+CMakeFiles/fig_geometricas_her.dir/main.cpp.o: CMakeFiles/fig_geometricas_her.dir/flags.make
+CMakeFiles/fig_geometricas_her.dir/main.cpp.o: /home/vanessacardenas/Proyectos/ALSE_2510/Fig_Geometricas/fig_geometricas_her/main.cpp
+CMakeFiles/fig_geometricas_her.dir/main.cpp.o: CMakeFiles/fig_geometricas_her.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vanessacardenas/Proyectos/ALSE_2510/Fig_Geometricas/fig_geometricas_her/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/fig_geometricas_her.dir/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fig_geometricas_her.dir/main.cpp.o -MF CMakeFiles/fig_geometricas_her.dir/main.cpp.o.d -o CMakeFiles/fig_geometricas_her.dir/main.cpp.o -c /home/vanessacardenas/Proyectos/ALSE_2510/Fig_Geometricas/fig_geometricas_her/main.cpp
 
-CMakeFiles/fig_geometricas_her.dir/mainTarea.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/fig_geometricas_her.dir/mainTarea.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vanessacardenas/Proyectos/ALSE_2510/Fig_Geometricas/fig_geometricas_her/mainTarea.cpp > CMakeFiles/fig_geometricas_her.dir/mainTarea.cpp.i
+CMakeFiles/fig_geometricas_her.dir/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/fig_geometricas_her.dir/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vanessacardenas/Proyectos/ALSE_2510/Fig_Geometricas/fig_geometricas_her/main.cpp > CMakeFiles/fig_geometricas_her.dir/main.cpp.i
 
-CMakeFiles/fig_geometricas_her.dir/mainTarea.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fig_geometricas_her.dir/mainTarea.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vanessacardenas/Proyectos/ALSE_2510/Fig_Geometricas/fig_geometricas_her/mainTarea.cpp -o CMakeFiles/fig_geometricas_her.dir/mainTarea.cpp.s
+CMakeFiles/fig_geometricas_her.dir/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fig_geometricas_her.dir/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vanessacardenas/Proyectos/ALSE_2510/Fig_Geometricas/fig_geometricas_her/main.cpp -o CMakeFiles/fig_geometricas_her.dir/main.cpp.s
 
 CMakeFiles/fig_geometricas_her.dir/Geometrica.cpp.o: CMakeFiles/fig_geometricas_her.dir/flags.make
 CMakeFiles/fig_geometricas_her.dir/Geometrica.cpp.o: /home/vanessacardenas/Proyectos/ALSE_2510/Fig_Geometricas/fig_geometricas_her/Geometrica.cpp
@@ -97,19 +97,19 @@ CMakeFiles/fig_geometricas_her.dir/Geometrica.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fig_geometricas_her.dir/Geometrica.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vanessacardenas/Proyectos/ALSE_2510/Fig_Geometricas/fig_geometricas_her/Geometrica.cpp -o CMakeFiles/fig_geometricas_her.dir/Geometrica.cpp.s
 
-CMakeFiles/fig_geometricas_her.dir/CirculoTarea.cpp.o: CMakeFiles/fig_geometricas_her.dir/flags.make
-CMakeFiles/fig_geometricas_her.dir/CirculoTarea.cpp.o: /home/vanessacardenas/Proyectos/ALSE_2510/Fig_Geometricas/fig_geometricas_her/CirculoTarea.cpp
-CMakeFiles/fig_geometricas_her.dir/CirculoTarea.cpp.o: CMakeFiles/fig_geometricas_her.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vanessacardenas/Proyectos/ALSE_2510/Fig_Geometricas/fig_geometricas_her/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/fig_geometricas_her.dir/CirculoTarea.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fig_geometricas_her.dir/CirculoTarea.cpp.o -MF CMakeFiles/fig_geometricas_her.dir/CirculoTarea.cpp.o.d -o CMakeFiles/fig_geometricas_her.dir/CirculoTarea.cpp.o -c /home/vanessacardenas/Proyectos/ALSE_2510/Fig_Geometricas/fig_geometricas_her/CirculoTarea.cpp
+CMakeFiles/fig_geometricas_her.dir/Circulo.cpp.o: CMakeFiles/fig_geometricas_her.dir/flags.make
+CMakeFiles/fig_geometricas_her.dir/Circulo.cpp.o: /home/vanessacardenas/Proyectos/ALSE_2510/Fig_Geometricas/fig_geometricas_her/Circulo.cpp
+CMakeFiles/fig_geometricas_her.dir/Circulo.cpp.o: CMakeFiles/fig_geometricas_her.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vanessacardenas/Proyectos/ALSE_2510/Fig_Geometricas/fig_geometricas_her/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/fig_geometricas_her.dir/Circulo.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fig_geometricas_her.dir/Circulo.cpp.o -MF CMakeFiles/fig_geometricas_her.dir/Circulo.cpp.o.d -o CMakeFiles/fig_geometricas_her.dir/Circulo.cpp.o -c /home/vanessacardenas/Proyectos/ALSE_2510/Fig_Geometricas/fig_geometricas_her/Circulo.cpp
 
-CMakeFiles/fig_geometricas_her.dir/CirculoTarea.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/fig_geometricas_her.dir/CirculoTarea.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vanessacardenas/Proyectos/ALSE_2510/Fig_Geometricas/fig_geometricas_her/CirculoTarea.cpp > CMakeFiles/fig_geometricas_her.dir/CirculoTarea.cpp.i
+CMakeFiles/fig_geometricas_her.dir/Circulo.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/fig_geometricas_her.dir/Circulo.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vanessacardenas/Proyectos/ALSE_2510/Fig_Geometricas/fig_geometricas_her/Circulo.cpp > CMakeFiles/fig_geometricas_her.dir/Circulo.cpp.i
 
-CMakeFiles/fig_geometricas_her.dir/CirculoTarea.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fig_geometricas_her.dir/CirculoTarea.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vanessacardenas/Proyectos/ALSE_2510/Fig_Geometricas/fig_geometricas_her/CirculoTarea.cpp -o CMakeFiles/fig_geometricas_her.dir/CirculoTarea.cpp.s
+CMakeFiles/fig_geometricas_her.dir/Circulo.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fig_geometricas_her.dir/Circulo.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vanessacardenas/Proyectos/ALSE_2510/Fig_Geometricas/fig_geometricas_her/Circulo.cpp -o CMakeFiles/fig_geometricas_her.dir/Circulo.cpp.s
 
 CMakeFiles/fig_geometricas_her.dir/Cuadrado.cpp.o: CMakeFiles/fig_geometricas_her.dir/flags.make
 CMakeFiles/fig_geometricas_her.dir/Cuadrado.cpp.o: /home/vanessacardenas/Proyectos/ALSE_2510/Fig_Geometricas/fig_geometricas_her/Cuadrado.cpp
@@ -155,9 +155,9 @@ CMakeFiles/fig_geometricas_her.dir/Pentagono.cpp.s: cmake_force
 
 # Object files for target fig_geometricas_her
 fig_geometricas_her_OBJECTS = \
-"CMakeFiles/fig_geometricas_her.dir/mainTarea.cpp.o" \
+"CMakeFiles/fig_geometricas_her.dir/main.cpp.o" \
 "CMakeFiles/fig_geometricas_her.dir/Geometrica.cpp.o" \
-"CMakeFiles/fig_geometricas_her.dir/CirculoTarea.cpp.o" \
+"CMakeFiles/fig_geometricas_her.dir/Circulo.cpp.o" \
 "CMakeFiles/fig_geometricas_her.dir/Cuadrado.cpp.o" \
 "CMakeFiles/fig_geometricas_her.dir/Triangulo.cpp.o" \
 "CMakeFiles/fig_geometricas_her.dir/Pentagono.cpp.o"
@@ -165,9 +165,9 @@ fig_geometricas_her_OBJECTS = \
 # External object files for target fig_geometricas_her
 fig_geometricas_her_EXTERNAL_OBJECTS =
 
-fig_geometricas_her: CMakeFiles/fig_geometricas_her.dir/mainTarea.cpp.o
+fig_geometricas_her: CMakeFiles/fig_geometricas_her.dir/main.cpp.o
 fig_geometricas_her: CMakeFiles/fig_geometricas_her.dir/Geometrica.cpp.o
-fig_geometricas_her: CMakeFiles/fig_geometricas_her.dir/CirculoTarea.cpp.o
+fig_geometricas_her: CMakeFiles/fig_geometricas_her.dir/Circulo.cpp.o
 fig_geometricas_her: CMakeFiles/fig_geometricas_her.dir/Cuadrado.cpp.o
 fig_geometricas_her: CMakeFiles/fig_geometricas_her.dir/Triangulo.cpp.o
 fig_geometricas_her: CMakeFiles/fig_geometricas_her.dir/Pentagono.cpp.o
