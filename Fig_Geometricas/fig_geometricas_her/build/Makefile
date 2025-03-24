@@ -129,29 +129,29 @@ fig_geometricas_her/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fig_geometricas_her.dir/build.make CMakeFiles/fig_geometricas_her.dir/build
 .PHONY : fig_geometricas_her/fast
 
-Circulo.o: Circulo.cpp.o
-.PHONY : Circulo.o
+CirculoTarea.o: CirculoTarea.cpp.o
+.PHONY : CirculoTarea.o
 
 # target to build an object file
-Circulo.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fig_geometricas_her.dir/build.make CMakeFiles/fig_geometricas_her.dir/Circulo.cpp.o
-.PHONY : Circulo.cpp.o
+CirculoTarea.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fig_geometricas_her.dir/build.make CMakeFiles/fig_geometricas_her.dir/CirculoTarea.cpp.o
+.PHONY : CirculoTarea.cpp.o
 
-Circulo.i: Circulo.cpp.i
-.PHONY : Circulo.i
+CirculoTarea.i: CirculoTarea.cpp.i
+.PHONY : CirculoTarea.i
 
 # target to preprocess a source file
-Circulo.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fig_geometricas_her.dir/build.make CMakeFiles/fig_geometricas_her.dir/Circulo.cpp.i
-.PHONY : Circulo.cpp.i
+CirculoTarea.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fig_geometricas_her.dir/build.make CMakeFiles/fig_geometricas_her.dir/CirculoTarea.cpp.i
+.PHONY : CirculoTarea.cpp.i
 
-Circulo.s: Circulo.cpp.s
-.PHONY : Circulo.s
+CirculoTarea.s: CirculoTarea.cpp.s
+.PHONY : CirculoTarea.s
 
 # target to generate assembly for a file
-Circulo.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fig_geometricas_her.dir/build.make CMakeFiles/fig_geometricas_her.dir/Circulo.cpp.s
-.PHONY : Circulo.cpp.s
+CirculoTarea.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fig_geometricas_her.dir/build.make CMakeFiles/fig_geometricas_her.dir/CirculoTarea.cpp.s
+.PHONY : CirculoTarea.cpp.s
 
 Cuadrado.o: Cuadrado.cpp.o
 .PHONY : Cuadrado.o
@@ -249,29 +249,29 @@ Triangulo.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fig_geometricas_her.dir/build.make CMakeFiles/fig_geometricas_her.dir/Triangulo.cpp.s
 .PHONY : Triangulo.cpp.s
 
-main.o: main.cpp.o
-.PHONY : main.o
+mainTarea.o: mainTarea.cpp.o
+.PHONY : mainTarea.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fig_geometricas_her.dir/build.make CMakeFiles/fig_geometricas_her.dir/main.cpp.o
-.PHONY : main.cpp.o
+mainTarea.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fig_geometricas_her.dir/build.make CMakeFiles/fig_geometricas_her.dir/mainTarea.cpp.o
+.PHONY : mainTarea.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+mainTarea.i: mainTarea.cpp.i
+.PHONY : mainTarea.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fig_geometricas_her.dir/build.make CMakeFiles/fig_geometricas_her.dir/main.cpp.i
-.PHONY : main.cpp.i
+mainTarea.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fig_geometricas_her.dir/build.make CMakeFiles/fig_geometricas_her.dir/mainTarea.cpp.i
+.PHONY : mainTarea.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+mainTarea.s: mainTarea.cpp.s
+.PHONY : mainTarea.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fig_geometricas_her.dir/build.make CMakeFiles/fig_geometricas_her.dir/main.cpp.s
-.PHONY : main.cpp.s
+mainTarea.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fig_geometricas_her.dir/build.make CMakeFiles/fig_geometricas_her.dir/mainTarea.cpp.s
+.PHONY : mainTarea.cpp.s
 
 # Help Target
 help:
@@ -282,9 +282,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... fig_geometricas_her"
-	@echo "... Circulo.o"
-	@echo "... Circulo.i"
-	@echo "... Circulo.s"
+	@echo "... CirculoTarea.o"
+	@echo "... CirculoTarea.i"
+	@echo "... CirculoTarea.s"
 	@echo "... Cuadrado.o"
 	@echo "... Cuadrado.i"
 	@echo "... Cuadrado.s"
@@ -297,9 +297,9 @@ help:
 	@echo "... Triangulo.o"
 	@echo "... Triangulo.i"
 	@echo "... Triangulo.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... mainTarea.o"
+	@echo "... mainTarea.i"
+	@echo "... mainTarea.s"
 .PHONY : help
 
 
