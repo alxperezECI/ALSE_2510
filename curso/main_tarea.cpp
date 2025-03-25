@@ -1,7 +1,7 @@
 #include <iostream>
 #include "estudiante_tarea.h"
 #include "persona_tarea.h"
-#include <vector>
+#include <list>
 #include <fstream>
 #include <string>
 using namespace std;
@@ -13,7 +13,7 @@ int main(int argc, char const *argv[])
         cout << "Uso: " << argv[0] << " <archivo de datos>" << endl;
         return 1;
     }
-    vector<Estudiante> estudiantes;
+    list<Estudiante> estudiantes;
     vector<float> promedios;
     float promedio_curso = 0.0;
 
@@ -41,7 +41,8 @@ int main(int argc, char const *argv[])
 
     cout << "No. de estudiantes cargados: " << estudiantes.size() << endl;
 
-    vector<Estudiante>::iterator it;
+    list<Estudiante>::iterator it;
+
     for (it = estudiantes.begin(); it != estudiantes.end(); it++)
     {
         promedio_curso += it->promedio();
@@ -58,5 +59,15 @@ int main(int argc, char const *argv[])
 
     cout << "El mayor promedio del curso es: " << promedio_curso << endl;
 
+    estudiantes.sort();
+
+    cout << "El estudiante con menor promedio es: " << (*estudiantes.begin()) << endl;  //.begin() retorna un puntero
+    cout << "El estudiante con mayor promedio es: " << (*estudiantes.rbegin()) << endl; //.back() retorna el último objeto de la lista
+
+    cout << "Estudiantes ordenados por por promedio: " << endl;
+    for (it = estudiantes.begin(); it != estudiantes.end(); it++)
+    {
+        cout << *it << endl;
+    }
     return 0;
 }

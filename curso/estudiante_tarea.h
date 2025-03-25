@@ -15,7 +15,7 @@ class Estudiante : public Persona
 {
 
     int _codigo;
-    float _promedio;
+    mutable float _promedio = -1.;
     vector<float> vector_notas;
 
     Estudiante();
@@ -26,7 +26,9 @@ public:
 
     void agregar_nota(const float &nota);
 
-    const float promedio();
+    const float promedio() const;
+
+    bool operator<(const Estudiante &estudiante) const;
 
     const float &getNota(const int &num_nota);
 

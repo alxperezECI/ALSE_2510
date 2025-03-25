@@ -26,7 +26,7 @@ void Estudiante::agregar_nota(const float &nota)
     vector_notas.push_back(nota);
 }
 
-const float Estudiante::promedio()
+const float Estudiante::promedio() const
 {
     if (_promedio == 0)
     {
@@ -38,6 +38,16 @@ const float Estudiante::promedio()
         _promedio /= vector_notas.size();
     }
     return _promedio;
+}
+
+bool Estudiante::operator<(const Estudiante &estudiante) const
+{
+    if (_promedio < 0.0 || estudiante._promedio < 0.0)
+    {
+        promedio();
+        estudiante.promedio();
+    }
+    return _promedio < estudiante._promedio;
 }
 
 const float &Estudiante::getNota(const int &num_nota)
@@ -63,7 +73,7 @@ const float Estudiante::mayor_nota()
 
 ostream &operator<<(ostream &os, const Estudiante &estudiante)
 {
-    os << "ID: " << estudiante.getCod() << ", Nombre: " << estudiante.getNombre() << ", Apellido: " << estudiante.getApellido()
-       << ", Promedio: " << estudiante._promedio << endl;
+    os << estudiante.getCod() << " " << estudiante.getNombre() << " " << estudiante.getApellido()
+       << " Promedio: " << estudiante._promedio << endl;
     return os;
 }
