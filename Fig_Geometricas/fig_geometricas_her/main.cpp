@@ -35,7 +35,7 @@ int main(){
     pG = &a;
     cout << "Perímetro: " << pG->perimetro() << " y área: " << pG->area() << endl;
 
-    pG = &b;
+    pG = &b; 
     cout << "Perímetro: " << pG->perimetro() << " y área: " << pG->area() << endl;
 
     pG = new Triangulo( 5., 6. );
