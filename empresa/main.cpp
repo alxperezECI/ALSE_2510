@@ -1,5 +1,5 @@
 #include <iostream>
-#include "estudiante.h"
+#include "trabajador.h"
 #include "persona.h"
 #include <list>
 #include <fstream>
@@ -13,7 +13,7 @@ int main(int argc, char const *argv[])
         cout << "Uso: " << argv[0] << " <archivo de datos>" << endl;
         return 1;
     }
-    list<Estudiante> estudiantes;
+    list<Trabajador> estudiantes;
     double promedio_curso = 0.0;
 
     // Se leeerá de un archivo en donde en cada línea se tiene el nombre, apellido, documento de identidad y código del estudiante
@@ -25,7 +25,7 @@ int main(int argc, char const *argv[])
     while(archivo >> codigo >> nombre >> apellido >> docid  >> nota[0] >> nota[1] >> nota[2] >> nota[3] >> nota[4])
     {
       // Poner aquí el código para crear un objeto de la clase Estudiante y agregarlo al vector estudiantes
-        Estudiante e(nombre, apellido, docid, codigo);
+        Trabajador e(nombre, apellido, docid, codigo);
         for(int i=0; i< 5; i++)
         {
             e.agregarNota(nota[i]);
@@ -46,7 +46,7 @@ int main(int argc, char const *argv[])
     cout << "El estudiante con menor promedio es: " << (*estudiantes.begin()) << endl;
     cout << "El estudiante con mayor promedio es: " << estudiantes.back() << endl;
     
-    list<Estudiante>::iterator it;
+    list<Trabajador>::iterator it;
     for(it = estudiantes.begin(); it != estudiantes.end(); it++)
     {
         promedio_curso += it->Promedio();
