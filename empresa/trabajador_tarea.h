@@ -33,6 +33,8 @@ class Trabajador : public Persona
 
     float pago_mensual();
 
+    friend ostream &operator<<(ostream &os, Trabajador &t); 
+
 }
 
 #endif // ESTUDIANTE_TAREA_H

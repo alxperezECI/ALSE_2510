@@ -55,5 +55,11 @@ float Trabajador::pagoHextra()
 
 float Trabajador::pago_mensual()
 {
-    return _salario*(1+_totalex);
+    return _salario + _totalex;
+}
+
+ostream &operator<<(ostream &os, Trabajador &t)
+{
+    os << t.getDocumento() << " " << t.getNombre() << " " << t.getApellido() << " Pago: " << t.pago_mensual() << endl;
+    return os;
 }
