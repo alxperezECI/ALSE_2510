@@ -1,7 +1,7 @@
 #include <iostream>
 #include "trabajador.h"
 #include "persona.h"
-#include <list>
+#include <vector>
 #include <fstream>
 #include <string>   
 using namespace std;
@@ -13,46 +13,44 @@ int main(int argc, char const *argv[])
         cout << "Uso: " << argv[0] << " <archivo de datos>" << endl;
         return 1;
     }
-    list<Trabajador> estudiantes;
-    double promedio_curso = 0.0;
+    vector<Trabajador> trabajadores;
 
     // Se leeerá de un archivo en donde en cada línea se tiene el nombre, apellido, documento de identidad y código del estudiante
     // Se leerán las notas de cada estudiante y se calculará el promedio del curso  
     ifstream archivo(argv[1]);
     string nombre, apellido;
-    int docid, codigo;
-    double nota[5];
-    while(archivo >> codigo >> nombre >> apellido >> docid  >> nota[0] >> nota[1] >> nota[2] >> nota[3] >> nota[4])
+    double sal;
+    int docid;
+    float dia_cant[8];
+    if(archivo.is_open() == false)
     {
-      // Poner aquí el código para crear un objeto de la clase Estudiante y agregarlo al vector estudiantes
-        Trabajador e(nombre, apellido, docid, codigo);
-        for(int i=0; i< 5; i++)
+        cout << "No se pudo abrir el archivo " << argv[1] << endl;
+        return 1;
+    }
+
+    while(archivo >> nombre >> apellido >> docid >> sal >> dia_cant[0] >> dia_cant[1] 
+        >> dia_cant[2] >> dia_cant[3] >> dia_cant[4]
+        >> dia_cant[5] >> dia_cant[6] >> dia_cant[7])
+    {
+      // Poner aquí el código para crear un objeto de la clase Trabajador y agregarlo al vector estudiantes
+      Trabajador e(nombre, apellido, docid, sal);
+        for(int i=0; i< 4; i++)
         {
-            e.agregarNota(nota[i]);
-            //cout << nota[i] << " ";
+            e.horas_extra_dia(dia_cant[i*2], dia_cant[i*2+1] );
         }
-        //e.Promedio();
-        
-        estudiantes.push_back(e);
+                
+        trabajadores.push_back(e);
     }
     archivo.close();
 
-    cout << "No. de estudiantes cargados: " << estudiantes.size() << endl;
+    cout << "No. de trabajadores cargados: " << trabajadores.size() << endl;
     
-    
-    
-    estudiantes.sort();
-
-    cout << "El estudiante con menor promedio es: " << (*estudiantes.begin()) << endl;
-    cout << "El estudiante con mayor promedio es: " << estudiantes.back() << endl;
-    
-    list<Trabajador>::iterator it;
-    for(it = estudiantes.begin(); it != estudiantes.end(); it++)
+    vector<Trabajador>::iterator it;
+    for(it = trabajadores.begin(); it != trabajadores.end(); it++)
     {
-        promedio_curso += it->Promedio();
-        cout << (*it) << endl;
+        it->Pago_mensual();
+        cout << (*it);
     }
-    cout << "Promedio del curso: " << promedio_curso / estudiantes.size() << endl;  
     
     return 0;
 }
