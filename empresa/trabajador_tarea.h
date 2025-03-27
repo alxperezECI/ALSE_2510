@@ -8,9 +8,9 @@ using namespace std;
 
 struct h_extra
 {
-    char dia;
+    int dia;
     float canthoras;
-}
+};
 
 class Trabajador : public Persona
 {
@@ -19,22 +19,21 @@ class Trabajador : public Persona
     float _pmensual;
     vector<h_extra> _horextra;
     Trabajador();
-    ~Trabajador();
 
-    public:
-
+public:
     Trabajador(const string &name, const string &ape, const int &docid, const float &salario);
 
-    void horasextra(const char &dia, const float &horas);
+    ~Trabajador();
 
-    float gethorasex(const char &dia);
+    void horasextra(const int &dia, const float &horas);
+
+    float gethorasex(const int &dia);
 
     float pagoHextra();
 
     float pago_mensual();
 
-    friend ostream &operator<<(ostream &os, Trabajador &t); 
-
-}
+    friend ostream &operator<<(ostream &os, Trabajador &t);
+};
 
 #endif // ESTUDIANTE_TAREA_H

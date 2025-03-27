@@ -1,6 +1,6 @@
 #include "trabajador_tarea.h"
 
-Trabajador::Trabajador() : Persona("","",0)
+Trabajador::Trabajador() : Persona("", "", 0)
 {
     _salario = 0;
 }
@@ -12,9 +12,9 @@ Trabajador::Trabajador(const string &name, const string &ape, const int &docid, 
     _totalex = 0;
 }
 
-Trabajador::~Trabajador(){}
+Trabajador::~Trabajador() {}
 
-void Trabajador::horasextra(const char &dia, const float &horas)
+void Trabajador::horasextra(const int &dia, const float &horas)
 {
     h_extra diahor;
     diahor.dia = dia;
@@ -22,33 +22,33 @@ void Trabajador::horasextra(const char &dia, const float &horas)
     _horextra.push_back(diahor);
 }
 
-float Trabajador::gethorasex(const char &dia)
+float Trabajador::gethorasex(const int &dia)
 {
     if (_horextra.size() == 0)
         return 0.0;
 
     else
     {
-        for(int i = 0; i < _horextra.size(); i++)
+        for (int i = 0; i < _horextra.size(); i++)
         {
             if (_horextra[i].dia == dia)
                 return _horextra[i].canthoras;
         }
-        return 0.0
-    } 
+        return 0.0;
+    }
 }
 
 float Trabajador::pagoHextra()
 {
-    float valhora = _salario/240;
+    float valhora = _salario / 240;
     float horas = 0;
 
-    for(int i = 0; i < _horextra.size(); i++)
+    for (int i = 0; i < _horextra.size(); i++)
     {
         horas = _horextra[i].canthoras + horas;
     }
 
-    _totalex = horas*valhora;
+    _totalex = horas * valhora;
 
     return _totalex;
 }
