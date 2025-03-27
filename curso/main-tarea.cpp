@@ -1,9 +1,11 @@
 #include <iostream>
-#include <vector>
+#include <list>
 #include "estudiante-tarea.h"
 #include <string>
 #include <fstream>
 // GRUPO: JULIANA TUTA Y ANGEL PEDREROS
+
+using namespace std;
 
 int main(int argc, char const *argv[]) {
     /*
@@ -28,7 +30,7 @@ int main(int argc, char const *argv[]) {
         cout << "Uso: " << argv[0] << " <archivo de datos>" << endl;
         return 1;
     }
-    vector<Estudiante> estudiantes;
+    list<Estudiante> estudiantes;
     double promedio_curso = 0.0;
 
     // Se leeerá de un archivo en donde en cada línea se tiene el nombre, apellido, documento de identidad y código del estudiante
@@ -40,23 +42,26 @@ int main(int argc, char const *argv[]) {
     while(archivo >> codigo >> nombre >> apellido >> docid  >> nota[0] >> nota[1] >> nota[2] >> nota[3] >> nota[4])
     {
       estudiantes.push_back(Estudiante(nombre, apellido, docid, codigo));
+      auto it = prev(estudiantes.end());
       for(int j=0; j < 5; j++)
-            estudiantes[i].agregarnota(nota[j]);
-       estudiantes[i].promedio();
-       cout << estudiantes[i] << endl;
-       i++;
+            it->agregarnota(nota[j]);
+       it->promedio();
     }
     archivo.close();
 
     cout << "No. de estudiantes cargados: " << estudiantes.size() << endl;
     
-    vector<Estudiante>::iterator it;
-    for(it = estudiantes.begin(); it != estudiantes.end(); it++)
-    {
-        promedio_curso += it->promedio();
-    }
+    list<Estudiante>::iterator it;
+   
     cout << "Promedio del curso: " << promedio_curso / estudiantes.size() << endl;  
+    estudiantes.sort();
 
+    cout << "Estudiante con menor promedio: " << estudiantes.front() << endl;  
+    cout << "Estudiante con myor promedio: " << estudiantes.back() << endl;
+
+    for(it = estudiantes.begin(); it != estudiantes.end(); ++it){
+        cout << *it << endl;
+    }
     return 0;
 }
 

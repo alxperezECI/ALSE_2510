@@ -21,6 +21,7 @@ public:
     int cantnotas() const;
     int getID() const;
     friend ostream& operator<<(ostream &out, const Estudiante &es);
+    bool operator<(const Estudiante &e) const;
 };
 
 #endif // ESTUDIANTE_H

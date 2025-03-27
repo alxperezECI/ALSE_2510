@@ -39,3 +39,7 @@ ostream& operator<<(ostream &out, const Estudiante &es){
     out << "Nombre: " << es.Nombre() << " Apellido: " << es.Apellido() << " Documento: " << es.DocID() << " ID: " << es.getID() << " Promedio: " << es._promedio;
     return out;
 }
+
+bool Estudiante::operator<(const Estudiante &e) const{
+        return _promedio < e._promedio;
+}
