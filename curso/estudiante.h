@@ -7,6 +7,7 @@ using namespace std;
 class Estudiante:public Persona{
   vector<double> notas;
   int codigo;
+  double _promedio;
   Estudiante( );
 
 public:
@@ -16,7 +17,8 @@ public:
   int Codigo() const;
   double Nota( const int &i);
   void agregarNota( const double &nota);
-  double Promedio() const;
+  double Promedio() ;
+  bool operator<(const Estudiante &e) const;
   friend ostream &operator<<(ostream &os, const Estudiante &e); 
 
 };
