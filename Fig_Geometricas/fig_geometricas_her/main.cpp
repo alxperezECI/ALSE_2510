@@ -3,12 +3,44 @@
 #include "Cuadrado.h"
 #include "Triangulo.h"
 #include <vector>
+#include "Geometrica.h"
 
 using namespace std;
 
 int main(){
     vector<Geometrica*> vFig;
 
+    float r1, x1, y1, r2, x2, y2;
+
+    // Se pediran los datos del primer circulo
+    cout << "Ingrese el radio del primer circulo: ";
+    cin >> r1;
+    cout << "Ingrese la coordenada X del primer circulo: ";
+    cin >> x1;
+    cout << "Ingrese la coordenada Y del primer circulo: ";
+    cin >> y1;
+
+    // Se pediran los datos del segundo circulo
+    cout << "Ingrese el radio del segundo circulo: ";
+    cin >> r2;
+    cout << "Ingrese la coordenada X del segundo circulo: ";
+    cin >> x2;
+    cout << "Ingrese la coordenada Y del segundo circulo: ";
+    cin >> y2;
+
+    // Se crearan los circulos con los datos dados
+    Circulo c1(r1, x1, y1);
+    Circulo c2(r2, x2, y2);
+
+    // Se verificara la interseccion
+    if (c1.Interseccion(c2)) {
+        cout << "Los circulos se intersecan." << endl;
+    } else {
+        cout << "Los circulos no se intersecan." << endl;
+    }
+
+
+/*
     Circulo a = Circulo( 5. );
     cout << "Hello World!" << endl;
     cout << "Perímetro: " << a.perimetro() << " y área: " << a.area() << endl;
@@ -74,6 +106,6 @@ int main(){
         delete vFig.at(i);
     }
 
-
+*/
     return 0;
 }
