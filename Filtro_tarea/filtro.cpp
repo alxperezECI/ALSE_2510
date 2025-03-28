@@ -35,6 +35,11 @@ int Filtro::getTamano()
 
 float Filtro::salida_promedio()
 {
+    if (_memoria.empty())
+    {
+        return 0;
+    }
+
     float promedio = 0;
     for (list<float>::iterator it = _memoria.begin(); it != _memoria.end(); it++)
     {
