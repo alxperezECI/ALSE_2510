@@ -1,6 +1,8 @@
 #include "trabajador.h"
 #include <vector>
 #include <iostream>
+#include <iomanip>
+
 using namespace std;
 
 Trabajador::Trabajador():Persona("", "", 0) 
@@ -12,7 +14,7 @@ Trabajador::Trabajador():Persona("", "", 0)
 Trabajador::Trabajador(const string &nombre, const string &apellido, const int &docid, const double &sal)
 :Persona(nombre, apellido, docid) 
 {
-    _salario = 0.0;
+    _salario = sal;
 }
 
 void Trabajador::salario(const double &s)
@@ -49,7 +51,8 @@ void Trabajador::horas_extra_dia(const char &d, const float cant)
 
 ostream &operator<<(ostream &os, Trabajador &t)
 {
-    os << t.Doc_identidad() << " " << t.Nombre() << " " << t.Apellido() << " Pago: " << t.Pago_mensual() << endl;
+    os << t.Doc_identidad() << " " << t.Nombre() << " " << t.Apellido() 
+       << " Pago: " << std::setprecision(9) << t.Pago_mensual() << endl;   
     return os;
 }
 
@@ -63,5 +66,5 @@ double Trabajador::Pago_mensual()
     {
         total += _vec_h_extra[i].horas_extra;
     }
-    return _salario + total;
-}
+    return _salario *(1.0 + total/240.0);
+} 

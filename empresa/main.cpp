@@ -38,19 +38,33 @@ int main(int argc, char const *argv[])
         {
             e.horas_extra_dia(dia_cant[i*2], dia_cant[i*2+1] );
         }
-                
+
         trabajadores.push_back(e);
     }
     archivo.close();
 
     cout << "No. de trabajadores cargados: " << trabajadores.size() << endl;
-    
+
+
+    double mes[30];
+    for(int i=0; i<30; i++) mes[i] = 0.0;
+
     vector<Trabajador>::iterator it;
     for(it = trabajadores.begin(); it != trabajadores.end(); it++)
     {
         it->Pago_mensual();
         cout << (*it);
+        for(int i = 0; i< 30; i++)
+        {
+          mes[i] += it->horas_extra_dia(i);
+        }
     }
-    
+
+    // Imprimiendo los resultados.
+    for(int i = 0; i<30; i++)
+    {
+      cout << "día: " << i + 1 << " horas extras: " << mes[i] << endl;
+    }
+
     return 0;
 }
