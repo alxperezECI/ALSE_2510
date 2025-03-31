@@ -1,5 +1,4 @@
 #include "estudiante.h"
-#include <vector>
 #include <iostream>
 using namespace std;
 
@@ -8,7 +7,6 @@ Estudiante::Estudiante():Persona("", "", 0)
     codigo = 0;
 
 }
-
 
 Estudiante::Estudiante(const string &nombre, const string &apellido, const int &docid, const int &cod):Persona(nombre, apellido, docid) 
 {
