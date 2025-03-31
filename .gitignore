@@ -35,3 +35,4 @@
 *.dir 
 *.json 
 **./build 
+*.txt
