@@ -9,7 +9,7 @@ void suma_coef(const char argv[], int poli[])                   // separar coefi
 {                  
     int expo = 0, signo_mult = 1, coef = 0, i = 0;
 
-    while ( i < strlen(argv))
+    for(int i = 0; i<strlen(argv); i++)
     {         
 
         if (argv[i] == '+'){                                    // identificar signo del coeficiente
@@ -60,17 +60,17 @@ void impres(const int pol[])
         if (pol[i] != 0)                                        // condiciones para imprimir el resultado
         {
             if(i == 1 && (pol[i] < 0))
-                printf("- %dx ", -pol[i]);
+                printf("-%dx", -pol[i]);
             else if(i == 1 && (pol[i] > 0))
-                printf("+ %dx ", pol[i]);
+                printf("+%dx", pol[i]);
             else if(pol[i] > 0 && (i != 0))
-                printf("+ %dx^%d ", pol[i], i);
+                printf("+%dx^%d", pol[i], i);
             else if(pol[i] < 0 && (i != 0))
-                printf("- %dx^%d ", -pol[i], i);
+                printf("-%dx^%d", -pol[i], i);
             else if(i == 0 && (pol[i] < 0))
-                printf("- %d ", -pol[i]);
+                printf("-%d", -pol[i]);
             else if(i == 0 && (pol[i] > 0))
-                printf("+ %d ", pol[i]);
+                printf("+%d", pol[i]);
         }    
     }    
 }
