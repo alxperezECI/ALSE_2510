@@ -45,5 +45,5 @@ float Filtro::salida_promedio()
     {
         promedio += *it;
     }
-    return promedio / _tamano;
+    return promedio / _memoria.size();
 }
