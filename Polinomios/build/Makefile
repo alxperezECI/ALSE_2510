@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/main_user/Proyectos/ALSE_2510/eje5
+CMAKE_SOURCE_DIR = /home/main_user/Proyectos/ALSE_2510/Polinomios
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/main_user/Proyectos/ALSE_2510/build
+CMAKE_BINARY_DIR = /home/main_user/Proyectos/ALSE_2510/Polinomios/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/main_user/Proyectos/ALSE_2510/build/CMakeFiles /home/main_user/Proyectos/ALSE_2510/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/main_user/Proyectos/ALSE_2510/Polinomios/build/CMakeFiles /home/main_user/Proyectos/ALSE_2510/Polinomios/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/main_user/Proyectos/ALSE_2510/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/main_user/Proyectos/ALSE_2510/Polinomios/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -117,41 +117,41 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named clasificador
+# Target rules for targets named poly
 
 # Build rule for target.
-clasificador: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clasificador
-.PHONY : clasificador
+poly: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 poly
+.PHONY : poly
 
 # fast build rule for target.
-clasificador/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/clasificador.dir/build.make CMakeFiles/clasificador.dir/build
-.PHONY : clasificador/fast
+poly/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/poly.dir/build.make CMakeFiles/poly.dir/build
+.PHONY : poly/fast
 
-clasificar.o: clasificar.cpp.o
-.PHONY : clasificar.o
+main.o: main.cpp.o
+.PHONY : main.o
 
 # target to build an object file
-clasificar.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/clasificador.dir/build.make CMakeFiles/clasificador.dir/clasificar.cpp.o
-.PHONY : clasificar.cpp.o
+main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/poly.dir/build.make CMakeFiles/poly.dir/main.cpp.o
+.PHONY : main.cpp.o
 
-clasificar.i: clasificar.cpp.i
-.PHONY : clasificar.i
+main.i: main.cpp.i
+.PHONY : main.i
 
 # target to preprocess a source file
-clasificar.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/clasificador.dir/build.make CMakeFiles/clasificador.dir/clasificar.cpp.i
-.PHONY : clasificar.cpp.i
+main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/poly.dir/build.make CMakeFiles/poly.dir/main.cpp.i
+.PHONY : main.cpp.i
 
-clasificar.s: clasificar.cpp.s
-.PHONY : clasificar.s
+main.s: main.cpp.s
+.PHONY : main.s
 
 # target to generate assembly for a file
-clasificar.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/clasificador.dir/build.make CMakeFiles/clasificador.dir/clasificar.cpp.s
-.PHONY : clasificar.cpp.s
+main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/poly.dir/build.make CMakeFiles/poly.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -161,10 +161,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... clasificador"
-	@echo "... clasificar.o"
-	@echo "... clasificar.i"
-	@echo "... clasificar.s"
+	@echo "... poly"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 

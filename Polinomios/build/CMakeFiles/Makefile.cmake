@@ -7,10 +7,10 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
+  "/home/main_user/Proyectos/ALSE_2510/Polinomios/CMakeLists.txt"
   "CMakeFiles/3.28.3/CMakeCCompiler.cmake"
   "CMakeFiles/3.28.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.28.3/CMakeSystem.cmake"
-  "/home/main_user/Proyectos/ALSE_2510/eje5/CMakeLists.txt"
   "/usr/share/cmake-3.28/Modules/CMakeCInformation.cmake"
   "/usr/share/cmake-3.28/Modules/CMakeCXXInformation.cmake"
   "/usr/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake"
@@ -44,5 +44,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/clasificador.dir/DependInfo.cmake"
+  "CMakeFiles/poly.dir/DependInfo.cmake"
   )

@@ -1,8 +1,0 @@
-[
-{
-  "directory": "/home/main_user/Proyectos/ALSE_2510/build",
-  "command": "/usr/bin/g++   -g -o CMakeFiles/clasificador.dir/clasificar.cpp.o -c /home/main_user/Proyectos/ALSE_2510/eje5/clasificar.cpp",
-  "file": "/home/main_user/Proyectos/ALSE_2510/eje5/clasificar.cpp",
-  "output": "CMakeFiles/clasificador.dir/clasificar.cpp.o"
-}
-]

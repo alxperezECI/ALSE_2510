@@ -54,16 +54,16 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/main_user/Proyectos/ALSE_2510/eje5
+CMAKE_SOURCE_DIR = /home/main_user/Proyectos/ALSE_2510/Polinomios
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/main_user/Proyectos/ALSE_2510/build
+CMAKE_BINARY_DIR = /home/main_user/Proyectos/ALSE_2510/Polinomios/build
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/clasificador.dir/all
+all: CMakeFiles/poly.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,34 +71,34 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/clasificador.dir/clean
+clean: CMakeFiles/poly.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/clasificador.dir
+# Target rules for target CMakeFiles/poly.dir
 
 # All Build rule for target.
-CMakeFiles/clasificador.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/clasificador.dir/build.make CMakeFiles/clasificador.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/clasificador.dir/build.make CMakeFiles/clasificador.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/main_user/Proyectos/ALSE_2510/build/CMakeFiles --progress-num=1,2 "Built target clasificador"
-.PHONY : CMakeFiles/clasificador.dir/all
+CMakeFiles/poly.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/poly.dir/build.make CMakeFiles/poly.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/poly.dir/build.make CMakeFiles/poly.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/main_user/Proyectos/ALSE_2510/Polinomios/build/CMakeFiles --progress-num=1,2 "Built target poly"
+.PHONY : CMakeFiles/poly.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/clasificador.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/main_user/Proyectos/ALSE_2510/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/clasificador.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/main_user/Proyectos/ALSE_2510/build/CMakeFiles 0
-.PHONY : CMakeFiles/clasificador.dir/rule
+CMakeFiles/poly.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/main_user/Proyectos/ALSE_2510/Polinomios/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/poly.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/main_user/Proyectos/ALSE_2510/Polinomios/build/CMakeFiles 0
+.PHONY : CMakeFiles/poly.dir/rule
 
 # Convenience name for target.
-clasificador: CMakeFiles/clasificador.dir/rule
-.PHONY : clasificador
+poly: CMakeFiles/poly.dir/rule
+.PHONY : poly
 
 # clean rule for target.
-CMakeFiles/clasificador.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/clasificador.dir/build.make CMakeFiles/clasificador.dir/clean
-.PHONY : CMakeFiles/clasificador.dir/clean
+CMakeFiles/poly.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/poly.dir/build.make CMakeFiles/poly.dir/clean
+.PHONY : CMakeFiles/poly.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

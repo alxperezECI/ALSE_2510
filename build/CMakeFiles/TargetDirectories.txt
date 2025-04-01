@@ -1,3 +1,0 @@
-/home/main_user/Proyectos/ALSE_2510/build/CMakeFiles/clasificador.dir
-/home/main_user/Proyectos/ALSE_2510/build/CMakeFiles/edit_cache.dir
-/home/main_user/Proyectos/ALSE_2510/build/CMakeFiles/rebuild_cache.dir
