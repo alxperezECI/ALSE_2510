@@ -24,9 +24,6 @@ void suma_coef(const char argv[], int poli[])                   // separar coefi
 
         else if (isdigit(argv[i])){                             // determinar coeficiente con su signo  
             coef = strtol(&argv[i], NULL, 10) * signo_mult;
-            while (isdigit(argv[i])){
-                i++;
-            };
         }
 
         else
@@ -38,9 +35,6 @@ void suma_coef(const char argv[], int poli[])                   // separar coefi
             if (argv[i] == '^'){
                 i++;
                 expo = strtol(&argv[i], NULL, 10);
-                while (isdigit(argv[i])){
-                    i++;
-                };
             }
             else
                 expo = 1;
