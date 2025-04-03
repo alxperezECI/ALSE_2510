@@ -27,7 +27,7 @@ double Trabajador::salario() const
     return _salario;
 } 
 
-double Trabajador::horas_extra_dia(const int &i)
+double Trabajador::horas_extra_dia(const int &i) const
 { 
     // Aquí habría que buscar el día en el vector y retornar la cantidad si es que existe
     if( _vec_h_extra.size() == 0)   
@@ -56,7 +56,7 @@ ostream &operator<<(ostream &os, Trabajador &t)
     return os;
 }
 
-double Trabajador::Pago_mensual()
+double Trabajador::Pago_mensual() const
 {   
     if(_vec_h_extra.size() == 0)
         return _salario;

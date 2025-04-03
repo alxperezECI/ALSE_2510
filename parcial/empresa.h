@@ -7,14 +7,16 @@
 #include "trabajador.h"
 #include "persona.h"
 using namespace std;
-class Empresa{
+class Empresa
+{
 private:
   string _nombre;
   vector<Trabajador> _trabajadores;
-  double _total_nomina;
-  double _total_horas_extra;
-  double _total_horas_extra_dia;
+  mutable double _total_nomina;
+  mutable double _total_horas_extra;
+  mutable double _total_horas_extra_dia;
   Empresa();
+
 public:
   Empresa(string nombre);
   void agregar_trabajador(const Trabajador &t);
@@ -24,3 +26,5 @@ public:
   friend ostream &operator<<(ostream &os, Empresa &e);
   int num_trabajadores() const { return _trabajadores.size(); }
 };
+
+#endif //_EMPRESA_H
