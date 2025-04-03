@@ -24,3 +24,5 @@ public:
   friend ostream &operator<<(ostream &os, Empresa &e);
   int num_trabajadores() const { return _trabajadores.size(); }
 };
+
+#endif
