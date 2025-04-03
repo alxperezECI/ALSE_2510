@@ -1,6 +1,7 @@
 #include <iostream>
 #include "trabajador.h"
 #include "persona.h"
+#include "empresa.h"
 #include <vector>
 #include <fstream>
 #include <string>   
@@ -13,7 +14,7 @@ int main(int argc, char const *argv[])
         cout << "Uso: " << argv[0] << " <archivo de datos>" << endl;
         return 1;
     }
-    vector<Trabajador> trabajadores;
+    Empresa emp("ALSE_Workers");
 
     // Se leeerá de un archivo en donde en cada línea se tiene el nombre, apellido, documento de identidad y código del estudiante
     // Se leerán las notas de cada estudiante y se calculará el promedio del curso  
@@ -39,32 +40,18 @@ int main(int argc, char const *argv[])
             e.horas_extra_dia(dia_cant[i*2], dia_cant[i*2+1] );
         }
 
-        trabajadores.push_back(e);
+        emp.agregar_trabajador(e);
     }
     archivo.close();
 
-    cout << "No. de trabajadores cargados: " << trabajadores.size() << endl;
+    cout << "No. de trabajadores cargados: " << emp.num_trabajadores() << endl;
 
-
-    double mes[30];
-    for(int i=0; i<30; i++) mes[i] = 0.0;
-
-    vector<Trabajador>::iterator it;
-    for(it = trabajadores.begin(); it != trabajadores.end(); it++)
+    cout << "Total horas extra del mes: " << emp.total_horas_extra_mes() << endl;
+    for(int i=0; i< 31; i++)
     {
-        it->Pago_mensual();
-        cout << (*it);
-        for(int i = 0; i< 30; i++)
-        {
-          mes[i] += it->horas_extra_dia(i);
-        }
+        cout << "Total horas extra del dia " << i+1 << ": " 
+             << emp.total_horas_extra_dia(i+1) << endl;
     }
-
-    // Imprimiendo los resultados.
-    for(int i = 0; i<30; i++)
-    {
-      cout << "día: " << i + 1 << " horas extras: " << mes[i] << endl;
-    }
-
+    cout << "Total nómina: " << emp.total_nomina() << endl;
     return 0;
 }
