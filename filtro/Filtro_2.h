@@ -3,19 +3,20 @@
  */
 
 
-#ifndef _FILTRO_H
-#include <list>
 
-class Filtro {
+#include <list>
+#include <vector>
+using namespace std;
+
+class Filtro_2 {
 public:  
-    Filtro(int tamano, float coef[] );
-    void aplicar_filtro( float x_n );
+    Filtro_2(int tamano, float coef[] );
+    float aplicar_filtro( float x_n );
     int  getTamano(){ return _tamano;}
-private: 
-    int _tamano;
+private:
+    int _tamano; 
     std::list<float> _datos;
-    std::vector<float> _coeficientes;
+    vector<float> _coeficientes;
 
 };
 
-#endif //_FILTRO_H
