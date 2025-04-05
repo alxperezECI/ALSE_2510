@@ -1,0 +1,3 @@
+/home/main_user/Proyectos/ALSE_2510/Trabajos_y_pruebas/build/CMakeFiles/poly.dir
+/home/main_user/Proyectos/ALSE_2510/Trabajos_y_pruebas/build/CMakeFiles/edit_cache.dir
+/home/main_user/Proyectos/ALSE_2510/Trabajos_y_pruebas/build/CMakeFiles/rebuild_cache.dir
