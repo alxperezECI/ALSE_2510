@@ -21,9 +21,9 @@ virtual float perimetro();
  */
 
 void setX(float x){_xc = x;}
-float getX(){return _xc;}
+virtual float getX() const {return _xc;}
 void setY(float y){_yc = y;}
-float getY(){return _yc;}
+virtual float getY() const {return _yc;}
 void setAngulo(float a){_angulo = a;}
 float getAngulo(){return _angulo;}
 Geometrica();
