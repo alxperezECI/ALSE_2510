@@ -1,0 +1,16 @@
+cmake_minimum_required(VERSION 3.10)
+
+project(sqlitedb_testing)
+add_executable(${PROJECT_NAME}_open "open_db.cpp" )
+add_executable(${PROJECT_NAME}_create "create_db.cpp" )
+add_executable(${PROJECT_NAME}_insert "insert_db.cpp" )
+add_executable(${PROJECT_NAME}_select "select_db.cpp" )
+add_executable(${PROJECT_NAME}_update "update_db.cpp" )
+add_executable(${PROJECT_NAME}_delete "delete_db.cpp" )
+target_link_libraries (${PROJECT_NAME}_open sqlite3 )
+target_link_libraries (${PROJECT_NAME}_create sqlite3 )
+target_link_libraries (${PROJECT_NAME}_insert sqlite3 )
+target_link_libraries (${PROJECT_NAME}_select sqlite3 )
+target_link_libraries (${PROJECT_NAME}_update sqlite3 )
+target_link_libraries (${PROJECT_NAME}_delete sqlite3 )
+
