@@ -7,16 +7,8 @@
 using namespace std;
 
 static int callback(void *data, int argc, char **argv, char **azColName){
-   int i;
-   std::cout << (*(double*)data) << std::endl;
-
-   for(i = 0; i<argc; i++){
-      std::cout << azColName[i] << " = " << (argv[i] ? argv[i] : "NULL")  << std::endl;
-   }
-
-   std::cout << std::endl;
    double *local = (double*)data;
-   *local += 3.141592;
+   *local = atof(argv[0]);
    return 0;
 }
 
@@ -26,7 +18,7 @@ int main(int argc, char* argv[]) {
    int rc;
    string sql;
    const char* data = "He llamado la función Callback";
-   double f = 89.98;
+   double f = 0.0;
 
    /* Open database */
    rc = sqlite3_open("test.db", &db);
@@ -39,7 +31,7 @@ int main(int argc, char* argv[]) {
    }
 
    /* Create SQL statement */
-   sql = "SELECT * FROM usuario;";
+   sql = "SELECT avg(Temperatura) FROM sensor;";
 
    /* Execute SQL statement */
    rc = sqlite3_exec(db, sql.c_str(), callback, (void*)&f, &zErrMsg);
@@ -50,7 +42,7 @@ int main(int argc, char* argv[]) {
    } else {
       fprintf(stdout, "Operation done successfully\n");
    }
-   cout << f << endl;
+   cout << "El promedio de todas las temperaturas almacenadas es: " << f << endl;
    sqlite3_close(db);
    return 0;
 }
