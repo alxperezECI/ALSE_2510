@@ -55,6 +55,14 @@
                    <height>50</height>
                   </size>
                  </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
                 </widget>
                </item>
                <item>
@@ -76,6 +84,14 @@
                    <width>50</width>
                    <height>50</height>
                   </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
                  </property>
                 </widget>
                </item>
@@ -103,6 +119,14 @@
                    <height>50</height>
                   </size>
                  </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
                 </widget>
                </item>
                <item>
@@ -124,6 +148,14 @@
                    <width>50</width>
                    <height>50</height>
                   </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
                  </property>
                 </widget>
                </item>
@@ -188,6 +220,14 @@
                    <height>50</height>
                   </size>
                  </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
                 </widget>
                </item>
                <item>
@@ -209,6 +249,14 @@
                    <width>50</width>
                    <height>50</height>
                   </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
                  </property>
                 </widget>
                </item>
@@ -236,6 +284,14 @@
                    <height>50</height>
                   </size>
                  </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
                 </widget>
                </item>
                <item>
@@ -258,6 +314,14 @@
                    <height>50</height>
                   </size>
                  </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
                 </widget>
                </item>
               </layout>
@@ -275,6 +339,9 @@
          <widget class="QPushButton" name="cmd_Calcular">
           <property name="text">
            <string>Calcular</string>
+          </property>
+          <property name="shortcut">
+           <string>Shift+C</string>
           </property>
          </widget>
         </item>
@@ -311,6 +378,14 @@
                    <height>50</height>
                   </size>
                  </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
                  <property name="readOnly">
                   <bool>true</bool>
                  </property>
@@ -338,6 +413,14 @@
                    <width>50</width>
                    <height>50</height>
                   </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
                  </property>
                  <property name="readOnly">
                   <bool>true</bool>
@@ -371,6 +454,14 @@
                    <height>50</height>
                   </size>
                  </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
                  <property name="readOnly">
                   <bool>true</bool>
                  </property>
@@ -398,6 +489,14 @@
                    <width>50</width>
                    <height>50</height>
                   </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
                  </property>
                  <property name="readOnly">
                   <bool>true</bool>

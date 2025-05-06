@@ -17,8 +17,12 @@ public:
 
 private slots:
     void on_cmd_Calcular_clicked();
+    void on_cb_Operacion_currentIndexChanged(int index);
+    void recibir(int tipo, double esc);
 
 private:
     Ui::ventana_pp *ui;
+    int _tipo;
+    double _escalar;
 };
 #endif // VENTANA_PP_H
