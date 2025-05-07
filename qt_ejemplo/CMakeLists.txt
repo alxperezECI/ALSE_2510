@@ -19,6 +19,9 @@ set(PROJECT_SOURCES
         ventana_pp.cpp
         ventana_pp.h
         ventana_pp.ui
+        divi_diag.h
+        divi_diag.cpp
+        divi_diag.ui
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
