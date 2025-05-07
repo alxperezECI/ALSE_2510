@@ -17,15 +17,15 @@ set(PROJECT_SOURCES
         ventana_pp.cpp
         ventana_pp.h
         ventana_pp.ui
+        divi_diag.h
+        divi_diag.cpp
+        divi_diag.ui
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(qt_ejemplo
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
-        divi_diag.h
-        divi_diag.cpp
-        divi_diag.ui
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET qt_ejemplo APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
