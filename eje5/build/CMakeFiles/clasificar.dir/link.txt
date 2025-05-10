@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/clasificar.dir/polys.cpp.o -o clasificar 

@@ -1,6 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include "Filtro.h"
+#include "Filtro_2.h"
 
 using namespace std;
 #define N 9

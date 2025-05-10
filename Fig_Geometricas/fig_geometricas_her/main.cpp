@@ -12,9 +12,21 @@ int main(){
     Circulo a = Circulo( 5. );
     cout << "Hello World!" << endl;
     cout << "Perímetro: " << a.perimetro() << " y área: " << a.area() << endl;
-    a.setRadio( 7. );
+    a.setRadio( 1. );
+    a.setX(2.);
+    a.setY(2.);
     cout << "Perímetro: " << a.perimetro() << " y área: " << a.area() << endl;
-
+   
+    Circulo x = Circulo( 5. );
+    cout << "Hello World!" << endl;
+    cout << "Perímetro: " << x.perimetro() << " y área: " << x.area() << endl;
+    x.setRadio( 1. );
+    x.setX(0.);
+    x.setY(0.);
+    cout << "Perímetro: " << x.perimetro() << " y área: " << x.area() << endl;
+    cout << "interctan " << Circulo::interseccion( a, x ) << endl;
+    cout << "radio a: " << a.getRadio() << "radio x:" << x.getRadio() << endl;
+    
     Cuadrado b = Cuadrado( 10. );
     cout << "Perímetro: " << b.perimetro() << " y área: " << b.area() << endl;
 
@@ -23,7 +35,7 @@ int main(){
     pG = &a;
     cout << "Perímetro: " << pG->perimetro() << " y área: " << pG->area() << endl;
 
-    pG = &b;
+    pG = &b; 
     cout << "Perímetro: " << pG->perimetro() << " y área: " << pG->area() << endl;
 
     pG = new Triangulo( 5., 6. );
