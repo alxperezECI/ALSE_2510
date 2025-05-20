@@ -2,7 +2,8 @@
  * Project Untitled
  */
 
-
+#ifndef FILTRO
+#define FILTRO
 #include "Filtro.h"
 #include <list>
 #include <iostream>
@@ -42,6 +43,4 @@ float Filtro::promedio() {
     prom /= _datos.size();
     return prom;
 }
-
-
-
+#endif //_FILTRO_H

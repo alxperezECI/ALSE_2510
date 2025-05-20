@@ -1,0 +1,1 @@
+/usr/bin/g++ -g CMakeFiles/clasificador.dir/clasificar.cpp.o -o clasificador 
